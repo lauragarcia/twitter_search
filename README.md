@@ -1,28 +1,20 @@
-== README
+# Who's Driving
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dependecies:
 
-Things you may want to cover:
+* Ruby 2.2.2
+* Rails 4.2.6
+* Twitter Search API
 
-* Ruby version
+Application for search topics on twitter
 
-* System dependencies
+To install
 
-* Configuration
+``$ git clone``
 
-* Database creation
+Then run rails server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+``$ rails s``
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+And go to web server http://localhost:3000/
