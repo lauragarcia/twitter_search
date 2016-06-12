@@ -1,0 +1,127 @@
+
+/* Responsive: Portrait tablets and up */
+/* Space out content a bit */
+body {
+  font-family: "Lucida Console";
+}
+
+form{ width: 80%; margin: 0 auto;}
+.search_bar{width: 80%; font-size: 25px;}
+
+input[type=submit] {
+  padding:3px 18px; 
+  background:#9BC53D; 
+  border:0 none;
+  cursor:pointer;
+  color: white; 
+  font-size: 25px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 10px ;
+  border: 1px solid #c5c5c5;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.header {
+  position: relative;
+  text-align:center;
+  color: #FA7921;
+}
+.header > * {
+  display: inline-block;
+  font-size: 63px;
+  margin: 50px auto;
+  vertical-align: bottom;
+}
+.load_more {
+  text-align: center;
+  margin: 40px auto;
+}
+.load_more a {
+  padding: 10px 30px;
+  background-color: #FDE74C;
+  font-size: 32px;
+  color: #9BC53D;
+  text-decoration: none;
+}
+
+.load_more a:hover {
+  background-color: #9BC53D;
+  color: #FDE74C;
+  
+}
+.tweet{ 
+  width: 80%; 
+  margin: 10px auto;
+  border-bottom: 3px solid #1DA1F2;
+  padding: 10px 0;
+  min-height: 48px;
+  overflow: hidden;
+}
+
+.avatar {
+  float: left;
+  margin-right: 5px;
+  border: 3px solid #9BC53D ;
+}
+
+.tweet a {
+  color: #E55934;
+}
+.tweet a:hover{
+  color: #FDE74C;
+}
+
+.attach_img {
+  display: block;
+  max-width:50%;
+  max-height:50%;
+  margin: 20px auto;
+  clear: left;
+  border: 3px solid #FDE74C ;
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 65%;
+  }
+}
+@media (max-width: 1200px) {
+
+  .search_bar{
+    display: block;
+    margin: 3px auto;
+  }
+  input[type=submit] {
+    display: block;
+    margin: 3px auto;
+  }
+}
+
+
+.ui-widget-content {
+  width: 42% !important;
+  background: #fff;
+  font-size: .9em;
+  padding: .5em 0;
+  border-color: #ddd;
+  box-shadow: 0 .1em .2em rgba(187, 187, 187, 0.64);
+  line-height: 1.2;
+  max-height: 20em;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+ .ui-menu-item {
+  padding: 3px 7px ;
+  position: relative;
+  border: 0;
+  border-left: 5px solid transparent;
+  position: relative;
+}

@@ -1,0 +1,18 @@
+var recentSearch = <%= session[:recent].to_json.html_safe %>;
+$('#q').autocomplete({
+
+  minLength: 1,
+  source: recentSearch,
+  
+  focus: function(event, ui) {
+    $('#q').val(ui.item.value);
+    return false;
+  },
+
+  select: function(event, ui) {
+
+  $('#q').val(ui.item.value);
+    return false;
+  }
+ 
+});

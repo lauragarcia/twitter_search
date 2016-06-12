@@ -1,0 +1,11 @@
+<div class="tweet">
+  <%= image_tag tweet.profile_image, width: 48, height: 48,  class: 'avatar' %>
+  <%= link_to "@#{tweet.screen_name}", profile_url(tweet.screen_name), target: '_blank'%>
+  <%= twitter_text(tweet) %>
+  
+  <% tweet.media.each do |media| %>
+    <%= link_to media['expanded_url'], target: '_blank' do %>
+      <%= image_tag media['media_url'], class: 'attach_img' %>
+    <% end %>
+  <% end %>
+</div>

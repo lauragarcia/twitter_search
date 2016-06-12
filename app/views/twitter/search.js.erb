@@ -1,0 +1,11 @@
+<% unless params[:query].present? %>
+  $('.tweets').html('');
+<% end %>
+
+<% @tweets.each do |t| %>
+  $('.tweets').append("<%= escape_javascript render(:partial => 'tweet', :locals => { :tweet => t }) %>");
+<% end %>
+
+$('.load_more').html("<%= escape_javascript render(:partial => 'load_more', :locals => { :next_query => @next_query }) %>");
+
+<%= render partial: "autocomplete" %>
